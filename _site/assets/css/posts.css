@@ -1,0 +1,15 @@
+
+/* styling pre box */
+
+pre {
+    max-width: 80em;
+    max-height: 30em;
+    overflow: auto;
+}
+
+/* styling pre box */
+
+
+.page-content{
+    margin-top: 100px;
+}

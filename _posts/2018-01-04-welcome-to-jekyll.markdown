@@ -1,6 +1,6 @@
 ---
-layout: home
-title:  "How to use prismjs!"
+layout: post
+title:  "How to use Prismjs in Jekyll!"
 date:   2018-01-04 12:21:37 +0530
 categories: jekyll update
 ---

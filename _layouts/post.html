@@ -4,7 +4,6 @@
 {% include head.html %}
 
 <body>
-
 <div id="page-container">
 
     <div id="page-header">
@@ -17,14 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    {% for post in site.posts %}
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <sub>{{ post.date | date: '%B %d, %Y' }}</sub>
-                            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                        </div>
-                    </div>
-                    {% endfor %}
+                    {{content}}
                 </div>
             </div>
         </div>
@@ -37,7 +29,6 @@
 
 
 </div>
-
 </body>
 </html>
 ​

@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <title>Bootstrap Example</title>
+
+
+    <title>Jekyll with Prism</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- bootstrap 3 css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <!-- prism js -->
@@ -14,25 +24,48 @@
     <script src="http://localhost:4000/assets/js/prism.js"></script>
 
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/home.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/footer.css">
+
+
+
     <style>
-
-        /* styling pre box */
-        pre {
-            max-width: 80em;
-            max-height: 30em;
-            overflow: auto;
+        html {
+            height: 100%;
+            box-sizing: border-box;
         }
 
-
-        .margin-top-60{
-            margin-top: 60px;
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
         }
+
+        body {
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Playfair Display";
+        }
+
     </style>
 
 </head>
+
 <body>
+<div id="page-container">
 
+    <div id="page-header">
 
+        
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -50,18 +83,13 @@
     </div>
 </nav>
 
-<div class="container margin-top-60">
-    <div class="row">
-        <div class="col-md-12">
-            
+    </div>
+
+    <div id="page-content">
+        <div class="container">
             <div class="row">
-                <div class="small-12 columns">
-                    <sub>January 04, 2018</sub>
-                    <a href="/jekyll/update/2018/01/04/welcome-to-jekyll.html"><h3>How to use prismjs!</h3></a>
-                </div>
-            </div>
-            
-            <h2 id="what-is-prism-">What is Prism ??</h2>
+                <div class="col-md-12">
+                    <h2 id="what-is-prism-">What is Prism ??</h2>
 <blockquote>
   <p>Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind.
 It’s used in thousands of websites, including some of those you visit daily.</p>
@@ -707,8 +735,48 @@ So below code I have written in the home.html file from_layouts folder.</p>
 
 </code></pre></div></div>
 
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <div id="page-footer">
+        <!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-12">
+                    <h3> Follow me on</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/vishalrbiradar" class="btn-social btn-outline btn-outline-light rounded-circle"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/vishalbiradar/" class="btn-social btn-outline btn-outline-light rounded-circle"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/biradar_vishal/" class="btn-social btn-outline btn-outline-light rounded-circle"><i class="fa fa-fw fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Website Name 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
 </div>
 </body>
 </html>
